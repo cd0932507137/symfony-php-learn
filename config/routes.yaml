@@ -13,3 +13,6 @@ app_user_notifications:
 app_member_data:
     path: /member/data
     controller: App\Controller\MemberController::data
+app_float_compare:
+    path: /float/compare
+    controller: App\Controller\FloatCompareController::compare

@@ -15,7 +15,9 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'app_floatcompare_compare' => [[], ['_controller' => 'App\\Controller\\FloatCompareController::compare'], [], [['text', '/float-compare/compare']], [], []],
     'app_lucky_number' => [[], ['_controller' => 'App\\Controller\\LuckyController::number'], [], [['text', '/lucky/number']], [], []],
     'app_user_notifications' => [[], ['_controller' => 'App\\Controller\\UserController::notifications'], [], [['text', '/user/notifications']], [], []],
     'app_member_data' => [[], ['_controller' => 'App\\Controller\\MemberController::data'], [], [['text', '/member/data']], [], []],
+    'app_float_compare' => [[], ['_controller' => 'App\\Controller\\FloatCompareController::compare'], [], [['text', '/float/compare']], [], []],
 ];

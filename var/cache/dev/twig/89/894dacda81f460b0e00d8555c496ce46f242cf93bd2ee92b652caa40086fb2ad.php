@@ -81,7 +81,8 @@ class __TwigTemplate_5a5ccaf8932f988fa99cfc66ab9213b7a0d64c49e8c8176d05026e9f732
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['notification'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 21
-        echo "</table>";
+        echo "</table>
+";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -125,7 +126,7 @@ class __TwigTemplate_5a5ccaf8932f988fa99cfc66ab9213b7a0d64c49e8c8176d05026e9f732
 
     public function getDebugInfo()
     {
-        return array (  104 => 3,  94 => 2,  84 => 21,  75 => 18,  71 => 17,  68 => 16,  64 => 15,  54 => 8,  49 => 7,  46 => 5,  44 => 2,);
+        return array (  105 => 3,  95 => 2,  84 => 21,  75 => 18,  71 => 17,  68 => 16,  64 => 15,  54 => 8,  49 => 7,  46 => 5,  44 => 2,);
     }
 
     public function getSourceContext()
@@ -150,6 +151,7 @@ class __TwigTemplate_5a5ccaf8932f988fa99cfc66ab9213b7a0d64c49e8c8176d05026e9f732
     <td>{{ notification.last_name }}</td>
   </tr>
   {% endfor %}
-</table>", "user/notifications.html.twig", "/Users/tim_jiang/Desktop/symfony-php-learn/templates/user/notifications.html.twig");
+</table>
+", "user/notifications.html.twig", "/Users/tim_jiang/Desktop/symfony-php-learn/templates/user/notifications.html.twig");
     }
 }
