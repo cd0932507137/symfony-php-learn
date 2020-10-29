@@ -1,0 +1,26 @@
+{# the CSS file lives at "public/css/user.css" #}
+{% block stylesheets %}
+    <link href="{{ asset('css/user.css') }}" rel="stylesheet" />
+{% endblock %}
+
+<h1>fetch api data</h1>
+<table>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>username</th>
+    <th>email</th>
+    <th>phone</th>
+    <th>company</th>
+  </tr>
+  {% for c in content %}
+  <tr>
+    <td>{{ c.id }}</td>
+    <td>{{ c.name }}</td>
+    <td>{{ c.username }}</td>
+    <td>{{ c.email }}</td>
+    <td>{{ c.phone }}</td>
+    <td>{{ c.company.catchPhrase }}</td>
+  </tr>
+  {% endfor %}
+</table>

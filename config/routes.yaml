@@ -1,0 +1,15 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+# config/routes.yaml
+
+# the "app_lucky_number" route name is not important yet
+app_lucky_number:
+    path: /lucky/number
+    controller: App\Controller\LuckyController::number
+app_user_notifications:
+    path: /user/notifications
+    controller: App\Controller\UserController::notifications
+app_member_data:
+    path: /member/data
+    controller: App\Controller\MemberController::data

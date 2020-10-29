@@ -1,0 +1,21 @@
+{# the CSS file lives at "public/css/user.css" #}
+{% block stylesheets %}
+    <link href="{{ asset('css/user.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{# templates/user/notifications.html.twig #}
+<h1>Hello {{ user_first_name }}!</h1>
+<p>You have {{ notifications|length }} new notifications.</p>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+  </tr>
+  {% for notification in notifications %}
+  <tr>
+    <td>{{ notification.first_name }}</td>
+    <td>{{ notification.last_name }}</td>
+  </tr>
+  {% endfor %}
+</table>
