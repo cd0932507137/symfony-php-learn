@@ -87,9 +87,9 @@ class __TwigTemplate_5a18699b0e3cb6a0b5bdc3d66d2d9628272d0b2adf72d1f4aee394b36f6
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "\t<h1>Your lucky number is ";
+        echo "\t<h1>Your lucky number is <span class=\"text-danger\">";
         echo twig_escape_filter($this->env, (isset($context["number"]) || array_key_exists("number", $context) ? $context["number"] : (function () { throw new RuntimeError('Variable "number" does not exist.', 6, $this->source); })()), "html", null, true);
-        echo "</h1>
+        echo "</span></h1>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -121,7 +121,7 @@ class __TwigTemplate_5a18699b0e3cb6a0b5bdc3d66d2d9628272d0b2adf72d1f4aee394b36f6
 \t1234
 {% endblock %}
 {% block body %}
-\t<h1>Your lucky number is {{ number }}</h1>
+\t<h1>Your lucky number is <span class=\"text-danger\">{{ number }}</span></h1>
 {% endblock %}
 ", "lucky/number.html.twig", "/Users/tim_jiang/Desktop/symfony-php-learn/templates/lucky/number.html.twig");
     }
